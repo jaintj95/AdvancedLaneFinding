@@ -19,7 +19,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./camera_cal_output/distortion_corrected/calibration1.jpg "Calibrated Image"
+[image0]: ./camera_cal/calibration1.jpg "Original Image"
+[image1]: ./camera_cal_output/calib1_undistorted.jpg "Calibrated Image"
 [image2]: ./output_images/distortion_corrected/straight_lines1.jpg "Undistorted Example Image"
 [image3]: ./output_images/binary_image/straight_lines1.jpg "Binary Image"
 [image4]: ./output_images/perspective_transformed/straight_lines1.jpg "Perspective Transform"
@@ -50,6 +51,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
+![Original Image][image0]
 ![Calibrated Image][image1]
 
 ### Pipeline (single images)
