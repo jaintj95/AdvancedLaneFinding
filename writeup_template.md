@@ -110,4 +110,8 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The current implement works fine with shadows and glares on roads but it will likely fail when the road has steep curves and is not flat.
+The biggest problem I face while working on the project was figuring out the right set of colour-spaces and parameters to make sure the lane lines are detected properly throughout the video and the algorithm doesn't fail anywhere. It took a lot of trial and error, playing around with thresholds and parameters values to come up with suitable parameters.
+
+The current implementation works fine with shadows and glares on roads but it will likely fail when the road has steep curves and is not flat.
+
+We have hardcoded some parameters in this challenge. This limits the lane detection algorithms capabilities. One way to make the algorithm more robust would be to use Neural Networks and Machine Learning algorithms to improve lane detection in extreme road conditions. 
